@@ -1,0 +1,26 @@
+{
+  "name": "borsaco/telegram-bot-api-bundle",
+  "type": "symfony-bundle",
+  "description": "A simple wrapper for telegram-bot-api.",
+  "keywords": ["telegram", "bot", "api", "telegram-bot-api", "php", "symfony"],
+  "homepage": "https://borsaco.ir",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alireza Seddighi",
+      "email": "seddighi@borsaco.ir",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "symfony/framework-bundle": "^4.2",
+    "irazasyed/telegram-bot-sdk": "^3.0"
+  },
+  "autoload": {
+    "psr-4": { "Borsaco\\TelegramBotApiBundle\\": "" }
+  }
+}
