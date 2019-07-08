@@ -1,0 +1,3 @@
+services:
+    Borsaco\TelegramBotApiBundle\Service\Bot:
+        arguments: ['@service_container']
