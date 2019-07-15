@@ -1,7 +1,5 @@
 TelegramBotApiBundle
 ===================
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/borsaco/TelegramBotApiBundle/blob/master/LICENSE)
-
 A symfony wrapper bundle for  [Telegram Bot API](https://core.telegram.org/bots/api).
 
 ## Install
@@ -88,4 +86,4 @@ You can test your SSL-setup online with this handy webtool on: [SSL Labs](https:
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The BSD License. Please see [License File](LICENSE) for more information.
