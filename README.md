@@ -1,6 +1,6 @@
 TelegramBotApiBundle
 ===================
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/borsaco/TelegramBotApiBundle/blob/master/LICENSE.md)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/borsaco/TelegramBotApiBundle/blob/master/LICENSE)
 
 A symfony wrapper bundle for  [Telegram Bot API](https://core.telegram.org/bots/api).
 
