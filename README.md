@@ -28,7 +28,7 @@ telegram_bot_api:
         developers_id: [1234567, 87654321]
         # If this mode is enabled, the robot only responds to the developers
         maintenance:
-            enable: true
+            enable: false
             text: "The robot is being repaired! Please come back later."
 
     # Bots:
