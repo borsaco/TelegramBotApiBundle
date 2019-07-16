@@ -13,7 +13,9 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder('telegram_bot_api');
-	    $treeBuilder->getRootNode()
+        $rootNode = $treeBuilder->root('telegram_bot_api');
+
+	    $rootNode
             ->children()
                 ->arrayNode('bots')
                     ->useAttributeAsKey('name')
