@@ -19,8 +19,8 @@ This bundle was designed to just work out of the box. The only thing you have to
 
 telegram_bot_api:
     # Proxy (optional) :
-    proxy: 'socks5h://127.0.0.1:5090' # this is example you have to change this
-    async_requests: false
+    #proxy: 'socks5h://127.0.0.1:5090' # this is example you have to change this
+    #async_requests: false
 
     # Development section:
     development:
