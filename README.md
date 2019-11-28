@@ -64,7 +64,7 @@ In order to receive updates via a Webhook, You first need to tell your webhook U
 
 Once you set the webhook using the setWebhook method, You can then use the below function to retrieve the updates that are sent to your Webhook URL. The function returns an array of Update objects.
 ```php
-    $updateArray = $firstBot()->getWebhookUpdates();
+    $updateArray = $firstBot()->getWebhookUpdate();
 ```
 
 ## Next...
