@@ -13,11 +13,7 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-    	if (Kernel::VERSION_ID >= 40200) {
-            $builder = new TreeBuilder('telegram_bot_api');
-        } else {
-            $builder = new TreeBuilder();
-        }
+    	$builder = new TreeBuilder('telegram_bot_api');
         $rootNode = \method_exists($builder, 'getRootNode') ? $builder->getRootNode() : $builder->root('telegram_bot_api');
 
 	$rootNode
