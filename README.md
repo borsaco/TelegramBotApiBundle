@@ -30,7 +30,7 @@ telegram_bot_api:
         maintenance:
             enable: false
             text: "The robot is being repaired! Please come back later."
-
+        // implement in next version
     # Bots:
     bots:
         # The bot name
