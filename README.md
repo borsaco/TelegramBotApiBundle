@@ -24,13 +24,14 @@ telegram_bot_api:
 
     # Development section:
     development:
+        # implement in next version
         # Telegram user_id of developers accounts
         developers_id: [1234567, 87654321]
         # If this mode is enabled, the robot only responds to the developers
         maintenance:
             enable: false
             text: "The robot is being repaired! Please come back later."
-        // implement in next version
+  
     # Bots:
     bots:
         # The bot name
