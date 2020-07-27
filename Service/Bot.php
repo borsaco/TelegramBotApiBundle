@@ -18,8 +18,8 @@ class Bot
     {
         $factory = new BotFactory();
 
-        if($name == null) {
-            if($this->config['default']) {
+        if ($name == null) {
+            if ($this->config['default']) {
                 return $factory->create($this->config, $this->config['default']);
             } else {
                 return $factory->create($this->config, reset($this->config['bots']));
@@ -27,5 +27,15 @@ class Bot
         }
 
         return $factory->create($this->config, $name);
+    }
+
+    public function getNames()
+    {
+        return array_keys($this->config['bots']);
+    }
+
+    public function hasBot($name)
+    {
+        return isset($this->config['bots'][$name]);
     }
 }

@@ -61,7 +61,23 @@ You can access the bot in the controller with :
     }
 ```
 
-In order to receive updates via a Webhook, You first need to tell your webhook URL to Telegram. You can use setWebhook method to specify a url and receive incoming updates via an outgoing webhook.
+## Webhook
+In order to receive updates via a Webhook, You first need to tell your webhook URL to Telegram. You can use setWebhook method to specify a url and receive incoming updates via an outgoing webhook or use this commands:.
+
+for get information about webhook of bot:
+```bash
+    $ php bin/console telegram:bot:webhook:info
+```
+
+for set webhook url for the bot:
+```bash
+    $ php bin/console telegram:bot:webhook:set
+```
+
+for delete webhook of the bot:
+```bash
+    $ php bin/console telegram:bot:webhook:delete
+```
 
 Once you set the webhook using the setWebhook method, You can then use the below function to retrieve the updates that are sent to your Webhook URL. The function returns an array of Update objects.
 ```php

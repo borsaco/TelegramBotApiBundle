@@ -17,8 +17,8 @@
   ],
   "require": {
     "php": ">=7.1",
-    "symfony/framework-bundle": "^3.4|^4.1.12|^5.0",
-    "irazasyed/telegram-bot-sdk": "^3.0"
+    "symfony/framework-bundle": "^5.1",
+    "irazasyed/telegram-bot-sdk": "^3.1"
   },
   "autoload": {
     "psr-4": { "Borsaco\\TelegramBotApiBundle\\": "" }
