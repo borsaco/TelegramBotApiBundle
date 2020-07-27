@@ -38,4 +38,9 @@ class Bot
     {
         return isset($this->config['bots'][$name]);
     }
+    
+    public function isMaintenance($name)
+    {
+        return $this->hasBot($name) ? $this->config['bots'][$name]['maintenance'] : false;
+    }
 }

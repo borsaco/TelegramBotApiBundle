@@ -21,3 +21,4 @@ services:
         arguments: ['@Borsaco\TelegramBotApiBundle\Service\Bot']
         tags:
             - { name: console.command }
+

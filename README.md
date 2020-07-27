@@ -29,7 +29,6 @@ telegram_bot_api:
         developers_id: [1234567, 87654321]
         # If this mode is enabled, the robot only responds to the developers
         maintenance:
-            enable: false
             text: "The robot is being repaired! Please come back later."
   
     # Bots:
@@ -38,9 +37,11 @@ telegram_bot_api:
         first:
             # Your bot token: (required)
             token: 123456789:ABCD1234****4321CBA
+            maintenance: false
         second:
             # Your bot token: (required)
             token: 123456789:ABCD1234****4321CBA
+            maintenance: false
     
     # The default bot returned when you call getBot()
     default: 'second' 
@@ -83,6 +84,10 @@ Once you set the webhook using the setWebhook method, You can then use the below
 ```php
     $updateArray = $firstBot()->getWebhookUpdate();
 ```
+
+## Maintenance
+
+If want to use maintenance of bots you can check `$bot->isMaintenance('bot_name')` in your entry point controller and send response message.
 
 ## Next...
 
