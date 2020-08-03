@@ -23,7 +23,7 @@ class Configuration implements ConfigurationInterface
 		    ->prototype('array')
 			->children()
 			    ->scalarNode( 'token' )->isRequired()->end()
-                ->booleanNode('enable')->defaultFalse()->end()
+                ->booleanNode('maintenance')->defaultFalse()->end()
 			->end()
 		    ->end()
 		->end()
