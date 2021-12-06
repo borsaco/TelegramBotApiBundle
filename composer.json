@@ -3,14 +3,13 @@
   "type": "symfony-bundle",
   "description": "A simple wrapper for telegram-bot-api.",
   "keywords": ["telegram", "bot", "api", "telegram-bot-api", "php", "symfony"],
-  "homepage": "https://borsaco.ir",
   "minimum-stability": "dev",
   "prefer-stable": true,
   "license": "BSD-3-Clause",
   "authors": [
     {
       "name": "Alireza Seddighi",
-      "email": "seddighi@borsaco.ir",
+      "email": "seddighi.alireza78@gmail.com",
       "role": "Developer"
     }
   ],
