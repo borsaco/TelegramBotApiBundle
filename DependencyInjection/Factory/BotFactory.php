@@ -9,7 +9,7 @@ use Telegram\Bot\HttpClients\GuzzleHttpClient;
 
 class BotFactory
 {
-    public function create(array $config = [], string $name)
+    public function create(array $config, string $name)
     {
         $bot = new Api($config['bots'][$name]['token']);
 
