@@ -14,7 +14,7 @@
     }
   ],
   "require": {
-    "php": ">=7.1",
+    "php": ">=7.2",
     "symfony/framework-bundle": "^5.1 || ^6.0",
     "irazasyed/telegram-bot-sdk": "^3.4"
   },
