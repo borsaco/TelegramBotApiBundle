@@ -4,6 +4,7 @@ namespace Borsaco\TelegramBotApiBundle\Service;
 
 use Borsaco\TelegramBotApiBundle\DependencyInjection\Factory\BotFactory;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Telegram\Bot\Api;
 
 class Bot
 {
@@ -14,7 +15,7 @@ class Bot
         $this->config = $container->getParameter('telegram_bot_api.config');
     }
 
-    public function getBot($name = null)
+    public function getBot(?string $name = null): Api
     {
         $factory = new BotFactory();
 
@@ -29,17 +30,17 @@ class Bot
         return $factory->create($this->config, $name);
     }
 
-    public function getNames()
+    public function getNames(): array
     {
         return array_keys($this->config['bots']);
     }
 
-    public function hasBot($name)
+    public function hasBot(string $name): bool
     {
         return isset($this->config['bots'][$name]);
     }
-    
-    public function isMaintenance($name)
+
+    public function isMaintenance(string $name): bool
     {
         return $this->hasBot($name) ? $this->config['bots'][$name]['maintenance'] : false;
     }

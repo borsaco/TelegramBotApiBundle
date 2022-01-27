@@ -3,13 +3,12 @@
 namespace Borsaco\TelegramBotApiBundle\DependencyInjection\Factory;
 
 use GuzzleHttp\Client;
-use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Telegram\Bot\Api;
 use Telegram\Bot\HttpClients\GuzzleHttpClient;
 
 class BotFactory
 {
-    public function create(array $config, string $name)
+    public function create(array $config, string $name): Api
     {
         $bot = new Api($config['bots'][$name]['token']);
 
