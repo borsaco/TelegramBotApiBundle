@@ -11,7 +11,7 @@ class Configuration implements ConfigurationInterface
     /**
      * {@inheritdoc}
      */
-    public function getConfigTreeBuilder()
+    public function getConfigTreeBuilder(): TreeBuilder
     {
         $builder = new TreeBuilder('telegram_bot_api');
         $rootNode = \method_exists($builder, 'getRootNode') ? $builder->getRootNode() : $builder->root('telegram_bot_api');
